@@ -17,7 +17,6 @@ class CourseController extends Controller
             ]);
 
             $post = Course::create($validated);
-
             return response()->json($post);
     }
 
