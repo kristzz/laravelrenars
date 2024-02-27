@@ -1,4 +1,5 @@
 Teorija (Laravel README.md failā):
+
     • Kas ir API? 
     Veids kā serveris sazinas ar klientu
 
@@ -12,22 +13,7 @@ Teorija (Laravel README.md failā):
     Object relational mapping ļauj izstrādātājiem darboties ar datubāzi izmantojot OOP principus un nerakstot sql pieprasījumus
 
     • Uzraksti Eloquent ORM pieprasījumu modelim User, kur nepieciešams iegūt visus lietotājus kuriem reitings ir lielāks par 4. Lietotāju tabulas struktūra:
-
     User::where('rating', '>', 4)->get();
-
-username
-VARCHAR(255)
-email
-VARCHAR(255)
-password
-VARCHAR(255)
-rating
-DECIMAL(8, 2)
-created_at
-TIMESTAMP
-updated_at
-TIMESTAMP
-
 
 Praktika:
 	Izveido Laravel projektu ar modeli un migrāciju priekš kursiem. Kurss sastāvēs no - nosaukuma, paskaidrojošā teksta, banera adreses un kursa cilvēku skaita. Ir jābūt divām API adresēm (galapunktiem): 
