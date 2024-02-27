@@ -16,6 +16,5 @@ use App\Http\Controllers\Api\CourseController;
 |
 */
 
-Route::Post('/postCourse', [CourseController::class, 'store']);
-
-Route::Get('/getCourse', [CourseController::class, 'index']);
+Route::post('/courses', [CourseController::class, 'store']);
+Route::get('/courses', [CourseController::class, 'index']);

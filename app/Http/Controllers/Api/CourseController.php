@@ -16,11 +16,12 @@ class CourseController extends Controller
                 'student_count' => 'required|integer'
             ]);
 
-            $post = Course::create($validated);
-            return response()->json($post);
+            $course = Course::create($validated);
+            return response()->json($course);
     }
 
     public function index(){
-        return Course::all();
+        $courses = Course::all();
+        return response()->json($courses);
     }
 }
