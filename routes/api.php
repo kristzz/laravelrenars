@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\Api\CourseController;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -14,6 +16,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::Post('/postCourse', [CourseController::class, 'store']);
+
+Route::Get('/getCourse', [CourseController::class, 'index']);
