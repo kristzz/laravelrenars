@@ -4,7 +4,7 @@ Teorija (Laravel README.md failā):
     Veids kā serveris sazinas ar klientu
 
     • Kā deklarēt mainīgo PHP valodā? 
-    $nosaukums
+    $nosaukums = vertiba
 
     • Kādu arhitektūru izmanto Laravel, paskaidro kā tā strādā: 
     Laravel izmanto MVC (model, view, controller) arhitektūru, klients veic pieprasījumu, controlleris saņem pieprasījumu, izmanto modeli lai iegūtu vajadzīgo un atgriež vajadzīgo 
